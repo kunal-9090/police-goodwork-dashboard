@@ -5,6 +5,7 @@ A production-ready backend built for Odisha Police Good Work Recognition, design
 
 This project is built using the MERN stack, with a scalable, modular backend architecture.
 
+
 🚀 Core Highlights
 🔐 Authentication & Authorization
 
@@ -17,6 +18,7 @@ Password hashing using bcrypt
 Token-based protected routes
 
 Admin-only & officer-only endpoints
+
 
 🗄️ Database (MongoDB Atlas)
 
@@ -48,6 +50,7 @@ Illegal Firearms
 
 Cyber Crime
 
+
 🏅 Points & Rewards System
 
 The platform rewards officers based on good work.
@@ -62,9 +65,11 @@ Points visible in leaderboard
 
 Redemption allowed (1 Point = ₹100)
 
+
 📊 Analytics & Reporting (Modules 3, 9, 10)
 
 Admin gets intelligent insights:
+
 
 📌 Basic Analytics
 
@@ -76,6 +81,7 @@ Monthly case graphs
 
 District-wise performance
 
+
 📌 Station-Level Analytics
 
 Beat officer performance
@@ -83,6 +89,7 @@ Beat officer performance
 Station heatmaps
 
 Station case count
+
 
 📌 AI Insights
 
@@ -93,6 +100,7 @@ Hotspot detection
 Trend forecasting
 
 Suggested patrol routes (future)
+
 
 🗺️ GIS System (GeoJSON + Heatmaps + Choropleth)
 
@@ -106,6 +114,8 @@ District boundary API
 
 Map-based admin dashboard
 
+
+
 🎖️ Certificate Generation (Module 6)
 
 Auto-generate PDF certificate using PDFKit
@@ -118,6 +128,8 @@ Download via secure URL
 
 Stored locally (/certificates/)
 
+
+
 🧾 Withdrawal Management (Module 5)
 
 Officers request rewards redemption
@@ -127,6 +139,9 @@ Admin approves / rejects
 Auto point deduction
 
 Secure history logs
+
+
+
 
 🧑‍💼 Admin Dashboard API (Module 7)
 
@@ -144,6 +159,8 @@ View system logs
 
 Trigger AI reports
 
+
+
 🔥 AI Predictive Policing (Module 10)
 
 AI endpoints provide:
@@ -160,7 +177,10 @@ Future cases forecast
 
 All endpoints return JSON, ready for frontend integration.
 
+
+
 🧱 Project Folder Structure
+
 backend/
 │── config/
 │   └── db.js
@@ -201,16 +221,3 @@ backend/
 │── package.json
 │── server.js
 │── README.md
-
-🔧 Tech Stack
-Technology	Purpose
-Node.js	Backend runtime
-Express.js	API framework
-MongoDB Atlas	Cloud database
-Mongoose	ODM for MongoDB
-JWT	Authentication
-bcryptjs	Password hashing
-PDFKit	Certificate generation
-QRCode	QR generation
-GeoJSON	GIS mapping
-Nodemon	Dev server
