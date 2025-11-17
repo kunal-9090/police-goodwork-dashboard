@@ -1,78 +1,201 @@
 🛡️ Police Good Work Dashboard — Backend
 AI-Powered Smart Analytics System for Police Performance Recognition
 
-A full-stack MERN project designed for Odisha Police Good Work Recognition, featuring:
+A production-ready backend built for Odisha Police Good Work Recognition, designed to automate scoring, analytics, AI insights, GIS mapping, certificate generation, and administrative monitoring.
 
-✔ Role-based login (Admin + Officer)
-✔ JWT authentication
-✔ MongoDB Atlas integration
-✔ Secure middleware
-✔ Extendable modules for NDPS, NBW, Missing Persons, Convictions, etc.
-✔ Point-based reward system (1 Point = ₹100 redeemable cash)
+This project is built using the MERN stack, with a scalable, modular backend architecture.
 
-🚀 Features (Backend)
+🚀 Core Highlights
 🔐 Authentication & Authorization
 
-Secure JWT-based login
+Secure JWT login system
 
-Register users (Admin / Officer)
-
-Role-based access endpoints (ADMIN_ONLY, OFFICER_ONLY)
+Role-based access (ADMIN / OFFICER)
 
 Password hashing using bcrypt
 
-🗄 Database
+Token-based protected routes
 
-Hosted on MongoDB Atlas
+Admin-only & officer-only endpoints
 
-Centralized Officer & Admin collections
+🗄️ Database (MongoDB Atlas)
 
-Future-ready schemas for:
+Centralized collections:
 
-NDPS Cases
+User (Admin + Officer)
+
+NDPS (with geo-coordinates)
+
+Certificates
+
+Withdrawals
+
+PoliceStations
+
+Analytics Cache
+
+Admin System Logs
+
+Supports future extensions like:
+
+Missing Persons
 
 NBW Execution
 
 Convictions
 
-Missing Persons
-
 Illegal Firearms
 
-Good Work Entries
+Cyber Crime
 
 🏅 Points & Rewards System
 
-Officers earn points based on case severity
+The platform rewards officers based on good work.
 
-Admin approves entries
+✔ How points work
 
-Points can be redeemed (1 point = ₹100)
+Auto-calculated from NDPS case metrics
 
-Supports monthly and weekly scoring
+Admin approval adds points permanently
 
-📊 Reporting System (Upcoming)
+Points visible in leaderboard
 
-Auto-generate PDF reports
+Redemption allowed (1 Point = ₹100)
 
-Export Excel summaries
+📊 Analytics & Reporting (Modules 3, 9, 10)
 
-Trend charts: district-wise, drive-wise
+Admin gets intelligent insights:
 
-AI-powered natural language insights
+📌 Basic Analytics
 
-📁 Folder Structure
+Total cases
+
+Seizures summary
+
+Monthly case graphs
+
+District-wise performance
+
+📌 Station-Level Analytics
+
+Beat officer performance
+
+Station heatmaps
+
+Station case count
+
+📌 AI Insights
+
+Predict high-risk districts
+
+Hotspot detection
+
+Trend forecasting
+
+Suggested patrol routes (future)
+
+🗺️ GIS System (GeoJSON + Heatmaps + Choropleth)
+
+Full Odisha district GeoJSON
+
+NDPS entries with longitude + latitude
+
+Heatmap-ready API
+
+District boundary API
+
+Map-based admin dashboard
+
+🎖️ Certificate Generation (Module 6)
+
+Auto-generate PDF certificate using PDFKit
+
+Unique certificate ID
+
+QR Code for verification
+
+Download via secure URL
+
+Stored locally (/certificates/)
+
+🧾 Withdrawal Management (Module 5)
+
+Officers request rewards redemption
+
+Admin approves / rejects
+
+Auto point deduction
+
+Secure history logs
+
+🧑‍💼 Admin Dashboard API (Module 7)
+
+Admin can:
+
+Approve NDPS entries
+
+Approve withdrawals
+
+View officers
+
+View district trends
+
+View system logs
+
+Trigger AI reports
+
+🔥 AI Predictive Policing (Module 10)
+
+AI endpoints provide:
+
+Hotspot predictions
+
+Risk scoring
+
+District risk maps
+
+Trend summary
+
+Future cases forecast
+
+All endpoints return JSON, ready for frontend integration.
+
+🧱 Project Folder Structure
 backend/
 │── config/
 │   └── db.js
 │── controllers/
+│   └── ndpsController.js
+│   └── leaderboardController.js
+│   └── analyticsController.js
+│   └── withdrawalController.js
+│   └── certificateController.js
+│   └── stationController.js
+│   └── aiController.js
 │── middleware/
 │   └── authMiddleware.js
+│   └── roleMiddleware.js
 │── models/
 │   └── User.js
+│   └── NDPS.js
+│   └── Certificate.js
+│   └── Withdrawal.js
+│   └── PoliceStation.js
 │── routes/
 │   └── authRoutes.js
-│── node_modules/
+│   └── ndpsRoutes.js
+│   └── leaderboardRoutes.js
+│   └── analyticsRoutes.js
+│   └── withdrawalRoutes.js
+│   └── certificateRoutes.js
+│   └── stationRoutes.js
+│   └── gisRoutes.js
+│   └── aiRoutes.js
+│── gis/
+│   └── districts.geojson
+│── utils/
+│   └── generateCertificate.js
+│── certificates/
 │── .env
 │── .gitignore
 │── package.json
@@ -81,11 +204,13 @@ backend/
 
 🔧 Tech Stack
 Technology	Purpose
-Node.js	Runtime
-Express.js	Server framework
+Node.js	Backend runtime
+Express.js	API framework
 MongoDB Atlas	Cloud database
-Mongoose	ODM
+Mongoose	ODM for MongoDB
 JWT	Authentication
 bcryptjs	Password hashing
-CORS	Cross-origin security
-Nodemon	Development runner
+PDFKit	Certificate generation
+QRCode	QR generation
+GeoJSON	GIS mapping
+Nodemon	Dev server
