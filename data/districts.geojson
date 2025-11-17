@@ -1,0 +1,276 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+
+    {
+      "type": "Feature",
+      "properties": { "districtId": "ANGUL", "name": "Angul" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[84.739, 20.789], [85.102, 20.789], [85.102, 21.271], [84.739, 21.271], [84.739, 20.789]]]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": { "districtId": "BALANGIR", "name": "Balangir" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[82.85, 20.10], [83.55, 20.10], [83.55, 20.90], [82.85, 20.90], [82.85, 20.10]]]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": { "districtId": "BALASORE", "name": "Balasore" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[86.65, 21.05], [87.35, 21.05], [87.35, 21.80], [86.65, 21.80], [86.65, 21.05]]]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": { "districtId": "BARGARH", "name": "Bargarh" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[82.90, 20.90], [83.70, 20.90], [83.70, 21.70], [82.90, 21.70], [82.90, 20.90]]]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": { "districtId": "BHADRAK", "name": "Bhadrak" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[86.25, 20.95], [87.00, 20.95], [87.00, 21.55], [86.25, 21.55], [86.25, 20.95]]]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": { "districtId": "BOUDH", "name": "Boudh" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[83.85, 20.35], [84.45, 20.35], [84.45, 20.95], [83.85, 20.95], [83.85, 20.35]]]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": { "districtId": "CUTTACK", "name": "Cuttack" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[85.60, 20.20], [86.40, 20.20], [86.40, 20.95], [85.60, 20.95], [85.60, 20.20]]]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": { "districtId": "DEOGARH", "name": "Deogarh" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[84.85, 21.30], [85.40, 21.30], [85.40, 21.85], [84.85, 21.85], [84.85, 21.30]]]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": { "districtId": "DHENKANAL", "name": "Dhenkanal" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[85.20, 20.55], [85.95, 20.55], [85.95, 21.35], [85.20, 21.35], [85.20, 20.55]]]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": { "districtId": "GAJAPATI", "name": "Gajapati" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[83.80, 18.75], [84.50, 18.75], [84.50, 19.40], [83.80, 19.40], [83.80, 18.75]]]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": { "districtId": "GANJAM", "name": "Ganjam" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[84.40, 19.10], [85.20, 19.10], [85.20, 19.95], [84.40, 19.95], [84.40, 19.10]]]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": { "districtId": "JAGATSINGHPUR", "name": "Jagatsinghpur" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[86.05, 20.05], [86.55, 20.05], [86.55, 20.45], [86.05, 20.45], [86.05, 20.05]]]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": { "districtId": "JAJPUR", "name": "Jajpur" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[85.75, 20.50], [86.35, 20.50], [86.35, 21.10], [85.75, 21.10], [85.75, 20.50]]]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": { "districtId": "JHARSUGUDA", "name": "Jharsuguda" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[83.40, 21.70], [84.10, 21.70], [84.10, 22.30], [83.40, 22.30], [83.40, 21.70]]]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": { "districtId": "KALAHANDI", "name": "Kalahandi" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[82.55, 19.35], [83.50, 19.35], [83.50, 20.40], [82.55, 20.40], [82.55, 19.35]]]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": { "districtId": "KANDHAMAL", "name": "Kandhamal" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[83.75, 19.45], [84.65, 19.45], [84.65, 20.55], [83.75, 20.55], [83.75, 19.45]]]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": { "districtId": "KENDRAPARA", "name": "Kendrapara" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[86.35, 20.30], [86.95, 20.30], [86.95, 20.95], [86.35, 20.95], [86.35, 20.30]]]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": { "districtId": "KEONJHAR", "name": "Keonjhar" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[85.20, 21.40], [86.60, 21.40], [86.60, 22.30], [85.20, 22.30], [85.20, 21.40]]]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": { "districtId": "KHORDHA", "name": "Khordha" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[85.35, 19.60], [85.95, 19.60], [85.95, 20.15], [85.35, 20.15], [85.35, 19.60]]]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": { "districtId": "KORAPUT", "name": "Koraput" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[82.80, 18.45], [83.80, 18.45], [83.80, 19.20], [82.80, 19.20], [82.80, 18.45]]]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": { "districtId": "MALKANGIRI", "name": "Malkangiri" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[82.00, 18.10], [82.85, 18.10], [82.85, 18.90], [82.00, 18.90], [82.00, 18.10]]]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": { "districtId": "MAYURBHANJ", "name": "Mayurbhanj" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[86.35, 21.55], [87.25, 21.55], [87.25, 22.45], [86.35, 22.45], [86.35, 21.55]]]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": { "districtId": "NABARANGPUR", "name": "Nabarangpur" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[82.35, 19.00], [83.00, 19.00], [83.00, 19.70], [82.35, 19.70], [82.35, 19.00]]]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": { "districtId": "NAYAGARH", "name": "Nayagarh" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[84.90, 19.75], [85.55, 19.75], [85.55, 20.45], [84.90, 20.45], [84.90, 19.75]]]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": { "districtId": "NUAPADA", "name": "Nuapada" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[82.20, 20.25], [83.00, 20.25], [83.00, 21.00], [82.20, 21.00], [82.20, 20.25]]]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": { "districtId": "PURI", "name": "Puri" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[85.50, 19.50], [86.30, 19.50], [86.30, 20.10], [85.50, 20.10], [85.50, 19.50]]]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": { "districtId": "RAYAGADA", "name": "Rayagada" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[82.80, 18.90], [83.70, 18.90], [83.70, 19.70], [82.80, 19.70], [82.80, 18.90]]]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": { "districtId": "SAMBALPUR", "name": "Sambalpur" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[83.30, 21.15], [84.10, 21.15], [84.10, 21.90], [83.30, 21.90], [83.30, 21.15]]]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": { "districtId": "SUBARNAPUR", "name": "Subarnapur (Sonepur)" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[83.70, 20.70], [84.40, 20.70], [84.40, 21.20], [83.70, 21.20], [83.70, 20.70]]]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": { "districtId": "SUNDARGARH", "name": "Sundargarh" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[83.70, 21.60], [85.10, 21.60], [85.10, 22.55], [83.70, 22.55], [83.70, 21.60]]]
+      }
+    }
+
+  ]
+}
