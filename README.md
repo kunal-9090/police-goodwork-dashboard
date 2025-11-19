@@ -5,6 +5,10 @@ A production-ready backend built for Odisha Police Good Work Recognition, design
 
 This project is built using the MERN stack, with a scalable, modular backend architecture.
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 87e5c5058ab9526d6e5452c06f849b7838902cf0
 🚀 Core Highlights
 🔐 Authentication & Authorization
 
@@ -18,10 +22,18 @@ Token-based protected routes
 
 Admin-only & officer-only endpoints
 
+<<<<<<< HEAD
 🗄️ Database (MongoDB Atlas)
 
 Centralized collections:
 
+=======
+
+🗄️ Database (MongoDB Atlas)
+
+Centralized collections:
+
+>>>>>>> 87e5c5058ab9526d6e5452c06f849b7838902cf0
 User (Admin + Officer)
 
 NDPS (with geo-coordinates)
@@ -47,6 +59,10 @@ Convictions
 Illegal Firearms
 
 Cyber Crime
+<<<<<<< HEAD
+=======
+
+>>>>>>> 87e5c5058ab9526d6e5452c06f849b7838902cf0
 
 🏅 Points & Rewards System
 
@@ -62,6 +78,7 @@ Points visible in leaderboard
 
 Redemption allowed (1 Point = ₹100)
 
+<<<<<<< HEAD
 📊 Analytics & Reporting (Modules 3, 9, 10)
 
 Admin gets intelligent insights:
@@ -161,6 +178,124 @@ Future cases forecast
 All endpoints return JSON, ready for frontend integration.
 
 🧱 Project Folder Structure
+=======
+
+📊 Analytics & Reporting (Modules 3, 9, 10)
+
+Admin gets intelligent insights:
+
+
+📌 Basic Analytics
+
+Total cases
+
+Seizures summary
+
+Monthly case graphs
+
+District-wise performance
+
+
+📌 Station-Level Analytics
+
+Beat officer performance
+
+Station heatmaps
+
+Station case count
+
+
+📌 AI Insights
+
+Predict high-risk districts
+
+Hotspot detection
+
+Trend forecasting
+
+Suggested patrol routes (future)
+
+
+🗺️ GIS System (GeoJSON + Heatmaps + Choropleth)
+
+Full Odisha district GeoJSON
+
+NDPS entries with longitude + latitude
+
+Heatmap-ready API
+
+District boundary API
+
+Map-based admin dashboard
+
+
+
+🎖️ Certificate Generation (Module 6)
+
+Auto-generate PDF certificate using PDFKit
+
+Unique certificate ID
+
+QR Code for verification
+
+Download via secure URL
+
+Stored locally (/certificates/)
+
+
+
+🧾 Withdrawal Management (Module 5)
+
+Officers request rewards redemption
+
+Admin approves / rejects
+
+Auto point deduction
+
+Secure history logs
+
+
+
+
+🧑‍💼 Admin Dashboard API (Module 7)
+
+Admin can:
+
+Approve NDPS entries
+
+Approve withdrawals
+
+View officers
+
+View district trends
+
+View system logs
+
+Trigger AI reports
+
+
+
+🔥 AI Predictive Policing (Module 10)
+
+AI endpoints provide:
+
+Hotspot predictions
+
+Risk scoring
+
+District risk maps
+
+Trend summary
+
+Future cases forecast
+
+All endpoints return JSON, ready for frontend integration.
+
+
+
+🧱 Project Folder Structure
+
+>>>>>>> 87e5c5058ab9526d6e5452c06f849b7838902cf0
 backend/
 │── config/
 │   └── db.js
@@ -168,10 +303,17 @@ backend/
 │   └── ndpsController.js
 │   └── leaderboardController.js
 │   └── analyticsController.js
+<<<<<<< HEAD
 │   └── aiController.js
 │   └── certificateController.js
 │   └── withdrawalController.js
 │   └── stationController.js
+=======
+│   └── withdrawalController.js
+│   └── certificateController.js
+│   └── stationController.js
+│   └── aiController.js
+>>>>>>> 87e5c5058ab9526d6e5452c06f849b7838902cf0
 │── middleware/
 │   └── authMiddleware.js
 │   └── roleMiddleware.js
@@ -186,11 +328,19 @@ backend/
 │   └── ndpsRoutes.js
 │   └── leaderboardRoutes.js
 │   └── analyticsRoutes.js
+<<<<<<< HEAD
 │   └── aiRoutes.js
 │   └── certificateRoutes.js
 │   └── withdrawalRoutes.js
 │   └── stationRoutes.js
 │   └── gisRoutes.js
+=======
+│   └── withdrawalRoutes.js
+│   └── certificateRoutes.js
+│   └── stationRoutes.js
+│   └── gisRoutes.js
+│   └── aiRoutes.js
+>>>>>>> 87e5c5058ab9526d6e5452c06f849b7838902cf0
 │── gis/
 │   └── districts.geojson
 │── utils/
@@ -201,6 +351,7 @@ backend/
 │── package.json
 │── server.js
 │── README.md
+<<<<<<< HEAD
 
 
 
@@ -218,3 +369,5 @@ backend/
 | QRCode        | QR generation    |
 | GeoJSON       | GIS mapping      |
 | Nodemon       | Dev server       |
+=======
+>>>>>>> 87e5c5058ab9526d6e5452c06f849b7838902cf0
