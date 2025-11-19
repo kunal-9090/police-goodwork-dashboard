@@ -1,39 +1,34 @@
 🛡️ Police Good Work Dashboard — Backend
+
 AI-Powered Smart Analytics System for Police Performance Recognition
 
-A production-ready backend built for Odisha Police Good Work Recognition, designed to automate scoring, analytics, AI insights, GIS mapping, certificate generation, and administrative monitoring.
+A production-ready backend built for Odisha Police to automate:
+✔ Good Work scoring
+✔ Analytics & AI predictions
+✔ GIS mapping
+✔ Certificate generation
+✔ Admin monitoring
+✔ Real-time notifications
 
-This project is built using the MERN stack, with a scalable, modular backend architecture.
+Built using the MERN stack with a fully modular backend architecture (20 modules completed).
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 87e5c5058ab9526d6e5452c06f849b7838902cf0
 🚀 Core Highlights
 🔐 Authentication & Authorization
 
-Secure JWT login system
+Secure JWT login
 
 Role-based access (ADMIN / OFFICER)
 
 Password hashing using bcrypt
 
-Token-based protected routes
+Auth-protected API routes
 
-Admin-only & officer-only endpoints
-
-<<<<<<< HEAD
-🗄️ Database (MongoDB Atlas)
-
-Centralized collections:
-
-=======
+Strict access-control enforcement
 
 🗄️ Database (MongoDB Atlas)
 
-Centralized collections:
+Primary collections:
 
->>>>>>> 87e5c5058ab9526d6e5452c06f849b7838902cf0
 User (Admin + Officer)
 
 NDPS (with geo-coordinates)
@@ -44,11 +39,15 @@ Withdrawals
 
 PoliceStations
 
+Announcements
+
+Notifications
+
+Audit Logs
+
 Analytics Cache
 
-Admin System Logs
-
-Supports future extensions like:
+Supports future expansions:
 
 Missing Persons
 
@@ -58,316 +57,221 @@ Convictions
 
 Illegal Firearms
 
-Cyber Crime
-<<<<<<< HEAD
-=======
-
->>>>>>> 87e5c5058ab9526d6e5452c06f849b7838902cf0
+Cyber Crimes
 
 🏅 Points & Rewards System
 
-The platform rewards officers based on good work.
-
-✔ How points work
-
-Auto-calculated from NDPS case metrics
+Automatic points calculation from NDPS metrics
 
 Admin approval adds points permanently
 
-Points visible in leaderboard
+Visible in Leaderboard
 
-Redemption allowed (1 Point = ₹100)
+Redeemable through withdrawals (1 Point = ₹100)
 
-<<<<<<< HEAD
 📊 Analytics & Reporting (Modules 3, 9, 10)
-
-Admin gets intelligent insights:
-
 📌 Basic Analytics
 
-Total cases
+Total NDPS cases
 
-Seizures summary
+Seizure summary
 
-Monthly case graphs
+Monthly case trends
 
-District-wise performance
+District performance charts
 
 📌 Station-Level Analytics
 
-Beat officer performance
+Beat officer insights
 
-Station heatmaps
+Station-level heatmaps
 
-Station case count
+Case distribution
 
 📌 AI Insights
 
-Predict high-risk districts
+High-risk district prediction
 
 Hotspot detection
 
 Trend forecasting
 
-Suggested patrol routes (future)
+Future crime probability
+
+Suggested patrol route (future-ready)
 
 🗺️ GIS System (GeoJSON + Heatmaps + Choropleth)
 
-Full Odisha district GeoJSON
+Odisha district-level GeoJSON
 
-NDPS entries with longitude + latitude
+NDPS entries plotted via lat/long
 
 Heatmap-ready API
 
-District boundary API
+Choropleth mapping
 
-Map-based admin dashboard
+Fully map-enabled admin dashboard
 
 🎖️ Certificate Generation (Module 6)
 
-Auto-generate PDF certificate using PDFKit
+Auto-generated PDF via PDFKit
 
-Unique certificate ID
+Unique Certificate ID
 
-QR Code for verification
+QR Code verification
 
-Download via secure URL
+Stored in /certificates/
 
-Stored locally (/certificates/)
+Downloadable by officers
 
 🧾 Withdrawal Management (Module 5)
 
-Officers request rewards redemption
+Officers request cash rewards
 
-Admin approves / rejects
+Admin approval / rejection
 
 Auto point deduction
 
-Secure history logs
+Transaction history
 
-🧑‍💼 Admin Dashboard API (Module 7)
+🧑‍💼 Admin Dashboard (Module 7)
 
 Admin can:
 
 Approve NDPS entries
 
-Approve withdrawals
+Manage withdrawals
 
 View officers
 
-View district trends
+Analyze district-wise statistics
 
 View system logs
 
-Trigger AI reports
+Trigger AI-based reports
 
-🔥 AI Predictive Policing (Module 10)
+🤖 AI Predictive Policing (Module 10)
 
-AI endpoints provide:
+AI engine provides:
 
 Hotspot predictions
 
-Risk scoring
+Crime risk scoring
 
-District risk maps
+District risk mapping
 
-Trend summary
+Trend summaries
 
-Future cases forecast
+Monthly crime forecast
 
-All endpoints return JSON, ready for frontend integration.
+🔔 Real-Time Notifications (Module 11)
+
+WebSocket-based instant alerts
+
+Admin broadcast to all officers
+
+NDPS approval notifications
+
+Certificate issued notifications
+
+📢 Announcements System (Modules 12/13)
+
+Admin can publish announcements
+
+Officers can mark as read
+
+Department-wide communication center
+
+👤 Profile Management (Module 15)
+
+Update profile details
+
+District assignment
+
+Upload profile photo (Cloudinary)
+
+Device token for push alerts
+
+📝 Audit Logging (Module 16)
+
+Tracks every important action
+
+NDPS submit/approve
+
+Withdrawal actions
+
+Announcement operations
+
+Viewable by admin
+
+📄 Export System (Module 17)
+
+Exports available in:
+
+PDF (reports, summaries)
+
+Excel (entries, analytics)
+
+📈 Advanced Analytics Engine (Module 18)
+
+AI-enhanced patterns
+
+Case-seizure correlation
+
+Trend movement prediction
+
+Activity clustering
+
+Peak-hour analysis
+
+🏆 Performance Ranking Engine (Module 19)
+
+Smart officer ranking
+
+District ranking
+
+Hotspot district predictor
+
+Weighted scoring algorithm
+
+🔍 Global Search Engine (Module 20)
+
+Fast universal search across:
+
+NDPS entries
+
+Officers
+
+Certificates
+
+Announcements
 
 🧱 Project Folder Structure
-=======
-
-📊 Analytics & Reporting (Modules 3, 9, 10)
-
-Admin gets intelligent insights:
-
-
-📌 Basic Analytics
-
-Total cases
-
-Seizures summary
-
-Monthly case graphs
-
-District-wise performance
-
-
-📌 Station-Level Analytics
-
-Beat officer performance
-
-Station heatmaps
-
-Station case count
-
-
-📌 AI Insights
-
-Predict high-risk districts
-
-Hotspot detection
-
-Trend forecasting
-
-Suggested patrol routes (future)
-
-
-🗺️ GIS System (GeoJSON + Heatmaps + Choropleth)
-
-Full Odisha district GeoJSON
-
-NDPS entries with longitude + latitude
-
-Heatmap-ready API
-
-District boundary API
-
-Map-based admin dashboard
-
-
-
-🎖️ Certificate Generation (Module 6)
-
-Auto-generate PDF certificate using PDFKit
-
-Unique certificate ID
-
-QR Code for verification
-
-Download via secure URL
-
-Stored locally (/certificates/)
-
-
-
-🧾 Withdrawal Management (Module 5)
-
-Officers request rewards redemption
-
-Admin approves / rejects
-
-Auto point deduction
-
-Secure history logs
-
-
-
-
-🧑‍💼 Admin Dashboard API (Module 7)
-
-Admin can:
-
-Approve NDPS entries
-
-Approve withdrawals
-
-View officers
-
-View district trends
-
-View system logs
-
-Trigger AI reports
-
-
-
-🔥 AI Predictive Policing (Module 10)
-
-AI endpoints provide:
-
-Hotspot predictions
-
-Risk scoring
-
-District risk maps
-
-Trend summary
-
-Future cases forecast
-
-All endpoints return JSON, ready for frontend integration.
-
-
-
-🧱 Project Folder Structure
-
->>>>>>> 87e5c5058ab9526d6e5452c06f849b7838902cf0
 backend/
 │── config/
-│   └── db.js
 │── controllers/
-│   └── ndpsController.js
-│   └── leaderboardController.js
-│   └── analyticsController.js
-<<<<<<< HEAD
-│   └── aiController.js
-│   └── certificateController.js
-│   └── withdrawalController.js
-│   └── stationController.js
-=======
-│   └── withdrawalController.js
-│   └── certificateController.js
-│   └── stationController.js
-│   └── aiController.js
->>>>>>> 87e5c5058ab9526d6e5452c06f849b7838902cf0
 │── middleware/
-│   └── authMiddleware.js
-│   └── roleMiddleware.js
 │── models/
-│   └── User.js
-│   └── NDPS.js
-│   └── Certificate.js
-│   └── Withdrawal.js
-│   └── PoliceStation.js
 │── routes/
-│   └── authRoutes.js
-│   └── ndpsRoutes.js
-│   └── leaderboardRoutes.js
-│   └── analyticsRoutes.js
-<<<<<<< HEAD
-│   └── aiRoutes.js
-│   └── certificateRoutes.js
-│   └── withdrawalRoutes.js
-│   └── stationRoutes.js
-│   └── gisRoutes.js
-=======
-│   └── withdrawalRoutes.js
-│   └── certificateRoutes.js
-│   └── stationRoutes.js
-│   └── gisRoutes.js
-│   └── aiRoutes.js
->>>>>>> 87e5c5058ab9526d6e5452c06f849b7838902cf0
-│── gis/
-│   └── districts.geojson
 │── utils/
-│   └── generateCertificate.js
+│── gis/
 │── certificates/
-│── .env
-│── .gitignore
-│── package.json
 │── server.js
 │── README.md
-<<<<<<< HEAD
-
-
-
+└── .env
 
 🔧 Tech Stack
-| Technology    | Purpose          |
-| ------------- | ---------------- |
-| Node.js       | Runtime          |
-| Express.js    | REST API         |
-| MongoDB Atlas | Cloud Database   |
-| Mongoose      | ODM              |
-| JWT           | Authentication   |
-| BcryptJS      | Password Hashing |
-| PDFKit        | Certificate PDF  |
-| QRCode        | QR generation    |
-| GeoJSON       | GIS mapping      |
-| Nodemon       | Dev server       |
-=======
->>>>>>> 87e5c5058ab9526d6e5452c06f849b7838902cf0
+Technology	Purpose
+Node.js	Backend runtime
+Express.js	REST API framework
+MongoDB Atlas	Cloud database
+Mongoose	ODM
+JWT	Auth tokens
+bcryptJS	Password hashing
+Socket.IO	Real-time notifications
+PDFKit	Certificate PDF
+QRCode	Certificate verification
+Cloudinary	Image uploads
+GeoJSON	GIS mapping
+ExcelJS	Excel export
+Nodemon	Dev auto-restart
