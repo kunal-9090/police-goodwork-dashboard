@@ -1,5 +1,6 @@
 const Withdrawal = require("../models/Withdrawal");
 const User = require("../models/User");
+const sendNotification = require("../utils/sendNotification");   // ⭐ Notifications Module
 
 // -------------------------------------------
 // OFFICER: Request Withdrawal
@@ -8,15 +9,15 @@ exports.requestWithdrawal = async (req, res) => {
   try {
     const user = await User.findById(req.user.id);
 
-    const points = req.body.points;
+    const points = Number(req.body.points);
 
-    if (points <= 0) {
+    if (!points || points <= 0) {
       return res.status(400).json({ message: "Points must be greater than 0" });
     }
 
     if (points > user.totalPoints) {
       return res.status(400).json({
-        message: "You cannot withdraw more points than your total balance",
+        message: "You cannot withdraw more points than available",
       });
     }
 
@@ -28,10 +29,19 @@ exports.requestWithdrawal = async (req, res) => {
       amountInRupees: amount,
     });
 
+    // ⭐ Notification → Inform user
+    await sendNotification(
+      req.user.id,
+      "Withdrawal Request Submitted",
+      `Your withdrawal request of ₹${amount} has been submitted.`,
+      "/wallet"
+    );
+
     res.json({
       message: "Withdrawal request submitted successfully",
       withdrawal,
     });
+
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
@@ -42,11 +52,11 @@ exports.requestWithdrawal = async (req, res) => {
 // -------------------------------------------
 exports.getMyWithdrawals = async (req, res) => {
   try {
-    const list = await Withdrawal.find({ officerId: req.user.id }).sort({
-      createdAt: -1,
-    });
+    const list = await Withdrawal.find({ officerId: req.user.id })
+      .sort({ createdAt: -1 });
 
     res.json(list);
+
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
@@ -58,10 +68,11 @@ exports.getMyWithdrawals = async (req, res) => {
 exports.getAllWithdrawals = async (req, res) => {
   try {
     const list = await Withdrawal.find()
-      .populate("officerId", "name email districtId")
+      .populate("officerId", "name email districtId totalPoints walletBalance")
       .sort({ createdAt: -1 });
 
     res.json(list);
+
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
@@ -82,7 +93,13 @@ exports.approveWithdrawal = async (req, res) => {
 
     const user = await User.findById(withdrawal.officerId);
 
-    // Deduct points from officer
+    if (withdrawal.pointsRequested > user.totalPoints) {
+      return res.status(400).json({
+        message: "Officer does not have enough points to approve",
+      });
+    }
+
+    // Deduct points
     user.totalPoints -= withdrawal.pointsRequested;
     user.walletBalance += withdrawal.amountInRupees;
     await user.save();
@@ -91,10 +108,19 @@ exports.approveWithdrawal = async (req, res) => {
     withdrawal.adminRemark = req.body.remark || "";
     await withdrawal.save();
 
+    // ⭐ Notification → Inform officer
+    await sendNotification(
+      user._id,
+      "Withdrawal Approved",
+      `Your withdrawal of ₹${withdrawal.amountInRupees} has been approved.`,
+      "/wallet"
+    );
+
     res.json({
       message: "Withdrawal approved successfully",
       withdrawal,
     });
+
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
@@ -117,10 +143,19 @@ exports.rejectWithdrawal = async (req, res) => {
     withdrawal.adminRemark = req.body.remark || "";
     await withdrawal.save();
 
+    // ⭐ Notification → Inform officer
+    await sendNotification(
+      withdrawal.officerId,
+      "Withdrawal Rejected",
+      "Your withdrawal request was rejected by admin.",
+      "/wallet"
+    );
+
     res.json({
       message: "Withdrawal rejected",
       withdrawal,
     });
+
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
